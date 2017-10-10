@@ -4,7 +4,7 @@
 
 Name:           SLOF
 Version:        20170724
-Release:        1%{?extraver}%{gitcommittag}%{?dist}
+Release:        2%{?extraver}%{gitcommittag}%{?dist}
 Summary:        Slimline Open Firmware
 
 License:        BSD
@@ -58,6 +58,9 @@ cp -a boot_rom.bin $RPM_BUILD_ROOT%{_datadir}/qemu/slof.bin
 
 
 %changelog
+* Tue Oct 10 2017 JohannLiebert511 <johannliebert1975@gmail.com> - 20170724-2.git
+- Updating to ea31295 Use input-device and output-device
+
 * Wed Aug 16 2017 OpenPOWER Host OS Builds Bot <open-power-host-os-builds-bot@users.noreply.github.com> - 20170724-1.git
 - Version update
 - Updating to 685af54 virtio-net: rework the driver to support multiple open
