@@ -21,7 +21,7 @@ https://open-power-host-os.github.io/latest
 ## Additional information
 
 For convenience, this repository also provides a release package and
-packages groups:
+packages groups.
 
 ### Release package
 
@@ -32,49 +32,17 @@ OpenPOWER Host OS version. It also prepares the POWER system
 for KVM virtualization, by disabling simultaneous multi-threading
 and creating necessary systemd preset files.
 
-### Packages groups
+### Package groups
 
-A set of related packages is grouped into a "metapackage". The list of
-metapackages and the packages that are installed by them is the
-following:
+A set of related packages is grouped into a "metapackage". The list of 
+metapackages is the following:
 
-- open-power-host-os-all
-  - open-power-host-os-base
-  - open-power-host-os-container
-  - open-power-host-os-ras
-  - open-power-host-os-virt
-  - gcc
-  - golang-github-russross-blackfriday
-  - golang-github-shurcooL-sanitized_anchor_name
+* open-power-host-os-all
 
-- open-power-host-os-base
-  - open-power-host-os-release
-  - kernel
+* open-power-host-os-base
 
-- open-power-host-os-container
-  - open-power-host-os-base
-  - docker
-  - docker-swarm
-  - flannel
-  - kubernetes
+* open-power-host-os-container
 
-- open-power-host-os-ras
-  - open-power-host-os-base
-  - crash
-  - hwdata
-  - libnl3
-  - librtas
-  - libservicelog
-  - libvpd
-  - lshw
-  - lsvpd
-  - ppc64-diag
-  - servicelog
-  - sos
-  - systemtap
+* open-power-host-os-ras
 
-- open-power-host-os-virt
-  - open-power-host-os-base
-  - SLOF
-  - libvirt
-  - qemu
+* open-power-host-os-virt
