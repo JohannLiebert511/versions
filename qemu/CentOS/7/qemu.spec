@@ -189,8 +189,8 @@
 
 Summary: QEMU is a FAST! processor emulator
 Name: qemu
-Version: 2.10.0
-Release: 3%{?extraver}%{gitcommittag}%{?dist}
+Version: 2.11.50
+Release: 1%{?extraver}%{gitcommittag}%{?dist}
 Epoch: 15
 License: GPLv2+ and LGPLv2+ and BSD
 Group: Development/Tools
@@ -1555,6 +1555,10 @@ getent passwd qemu >/dev/null || \
 %endif
 
 %changelog
+* Tue Mar 06 2018 JohannLiebert511 <johannliebert1975@gmail.com> - 15:2.11.50-1.git
+- Version update
+- Updating to 59cc362 spapr: add missing break in h_get_cpu_characteristics()
+
 * Mon Sep 25 2017 Fabiano Rosas <farosas@linux.vnet.ibm.com> - 15:2.10.0-3.git
 - Increase memory locking limit for ppc64le
 
