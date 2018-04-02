@@ -247,8 +247,8 @@
 
 Summary: Library providing a simple virtualization API
 Name: libvirt
-Version: 3.6.0
-Release: 3%{?extraver}%{gitcommittag}%{?dist}
+Version: 4.0.0
+Release: 1%{?extraver}%{gitcommittag}%{?dist}
 License: LGPLv2+
 Group: Development/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
@@ -2125,6 +2125,10 @@ exit 0
 
 
 %changelog
+* Mon Apr 02 2018 JohannLiebert511 <johannliebert1975@gmail.com> - 4.0.0-1.git
+- Version update
+- Updating to 5e6f8a1 Merge tag v4.0.0-rc2 into hostos-devel
+
 * Thu Sep 07 2017 OpenPOWER Host OS Builds Bot <open-power-host-os-builds-bot@users.noreply.github.com> - 3.6.0-3.git
 - Updating to dd9401b virsh: Implement managedsave-edit command
 
