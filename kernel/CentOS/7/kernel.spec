@@ -308,13 +308,13 @@ Summary: The Linux kernel
 %define kernel_prereq  fileutils, module-init-tools >= 3.16-2, initscripts >= 8.11.1-1, grubby >= 8.28-2
 %define initrd_prereq  dracut >= 001-7
 
-%define prerelease .rc4
+%define prerelease %{nil}
 
 Name: kernel%{?variant}
 Group: System Environment/Kernel
 License: GPLv2
 URL: http://www.kernel.org/
-Version: 4.14.0
+Version: 4.16.0
 Release: 1%{?prerelease}%{?extraver}%{gitcommittag}%{?dist}
 # DO NOT CHANGE THE 'ExclusiveArch' LINE TO TEMPORARILY EXCLUDE AN ARCHITECTURE BUILD.
 # SET %%nobuildarches (ABOVE) INSTEAD
@@ -1694,6 +1694,10 @@ fi
 
 
 %changelog
+* Mon Jun 04 2018 JohannLiebert511 <johannliebert1975@gmail.com> - 4.16.0-1.git
+- Version update
+- Updating to 5ed4ce3 KVM: PPC: Book 3S HV: Do ptesync in radix guest exit path
+
 * Sat Oct 21 2017 OpenPOWER Host OS Builds Bot <open-power-host-os-builds-bot@users.noreply.github.com> - 4.14.0-1.rc4.git
 - Version update
 - Updating to b27fc5c Merge branch kvm-ppc-fixes into hostos-devel
