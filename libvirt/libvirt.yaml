@@ -3,7 +3,7 @@ Package:
   - git:
      src: 'https://github.com/open-power-host-os/libvirt.git'
      branch: 'hostos-devel'
-     commit_id: 'dd9401b3cbda734a2ef91927792d2c05398249bb'
+     commit_id: 'b7c8ea8b8d0df252b1beb0b3c5a0b7b038da3422'
  version:
   file: 'configure.ac'
   regex: 'AC_INIT\(\[[^]]+\],\s*\[([\d.]+)\]'
