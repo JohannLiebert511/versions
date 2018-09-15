@@ -3,8 +3,8 @@
 %global gitcommittag    .git%{shortcommit}
 
 Name:           SLOF
-Version:        20170724
-Release:        2%{?extraver}%{gitcommittag}%{?dist}
+Version:        20180621
+Release:        1%{?extraver}%{gitcommittag}%{?dist}
 Summary:        Slimline Open Firmware
 
 License:        BSD
@@ -58,6 +58,10 @@ cp -a boot_rom.bin $RPM_BUILD_ROOT%{_datadir}/qemu/slof.bin
 
 
 %changelog
+* Sat Sep 15 2018 JohannLiebert511 <johannliebert1975@gmail.com> - 20180621-1.git
+- Version update
+- Updating to 7d37bab version: update to 20180621
+
 * Sat Oct 07 2017 OpenPOWER Host OS Builds Bot <open-power-host-os-builds-bot@users.noreply.github.com> - 20170724-2.git
 - Updating to ea31295 Use input-device and output-device
 
